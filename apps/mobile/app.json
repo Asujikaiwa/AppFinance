@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "AppFinance",
+    "slug": "appfinance",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "appfinance",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.appfinance.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "เปิดกล้องเพื่อถ่ายใบเสร็จ/ใบกำกับภาษี",
+        "NSPhotoLibraryUsageDescription": "เลือกรูปใบเสร็จจากคลังภาพ"
+      }
+    },
+    "android": {
+      "package": "com.appfinance.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "permissions": ["CAMERA", "READ_MEDIA_IMAGES"]
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        { "cameraPermission": "เปิดกล้องเพื่อถ่ายใบเสร็จ" }
+      ],
+      [
+        "expo-image-picker",
+        { "photosPermission": "เลือกรูปใบเสร็จจากคลังภาพ" }
+      ]
+    ],
+    "experiments": { "typedRoutes": true }
+  }
+}

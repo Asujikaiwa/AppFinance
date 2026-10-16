@@ -1,0 +1,17 @@
+{
+  "name": "@appfinance/db-tests",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Integration tests: migrations + RLS + PII encryption against real Supabase Postgres (Docker)",
+  "scripts": {
+    "test:db": "node scripts/run.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/pg": "8.11.6",
+    "pg": "8.12.0",
+    "typescript": "5.5.4",
+    "vitest": "2.0.5"
+  }
+}

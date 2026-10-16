@@ -1,0 +1,56 @@
+# deps
+node_modules/
+.pnpm-store/
+
+# build
+dist/
+build/
+*.tsbuildinfo
+
+# expo
+.expo/
+.expo-shared/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
+# env
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# supabase
+supabase/.branches
+supabase/.temp
+
+# logs
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+pnpm-debug.log*
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# added by push-github.ps1
+.next/
+.dart_tool/
+.gradle/
+Pods/
+.turbo/
+.env.*
+!.env.sample
+*.pem
+*serviceAccount*.json
+*.log

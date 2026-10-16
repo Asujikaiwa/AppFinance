@@ -1,0 +1,30 @@
+{
+  "name": "@appfinance/web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@appfinance/tax-core": "workspace:*",
+    "@line/liff": "2.24.0",
+    "@supabase/ssr": "0.5.1",
+    "@supabase/supabase-js": "2.45.4",
+    "next": "14.2.13",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "20.14.10",
+    "@types/react": "18.3.5",
+    "@types/react-dom": "18.3.0",
+    "autoprefixer": "10.4.20",
+    "postcss": "8.4.47",
+    "tailwindcss": "3.4.13",
+    "typescript": "5.5.4"
+  }
+}

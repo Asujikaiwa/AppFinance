@@ -1,0 +1,34 @@
+{
+  "name": "appfinance",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI-powered Thai tax bookkeeping — Expo mobile + Supabase",
+  "packageManager": "pnpm@9.12.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "pnpm --filter @appfinance/mobile start",
+    "web": "pnpm --filter @appfinance/web dev",
+    "ios": "pnpm --filter @appfinance/mobile ios",
+    "android": "pnpm --filter @appfinance/mobile android",
+    "test": "pnpm -r test",
+    "test:db": "pnpm --filter @appfinance/db-tests test:db",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "pnpm -r lint",
+    "db:reset": "supabase db reset",
+    "db:push": "supabase db push",
+    "fn:serve": "supabase functions serve --env-file ./.env.local",
+    "fn:deploy": "supabase functions deploy",
+    "line:richmenu": "deno run -A scripts/setup-line-richmenu.ts"
+  },
+  "devDependencies": {
+    "typescript": "5.5.4",
+    "@types/node": "20.14.10"
+  },
+  "engines": {
+    "node": ">=20.10.0",
+    "pnpm": ">=9.0.0"
+  }
+}
